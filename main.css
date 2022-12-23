@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+
+
+}
+#Sobre-a-loja .container {
+    justify-content: space-between;
+
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    font-size: 18px;
+}
+footer .container-flex {
+    display: flex;
+    justify-content: center;
+}
+
+header, footer {
+    background-color: #05070e;
+    padding-top: 16px;
+    color: rgb(255, 255, 255);
+    
+}
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+h1 {
+    padding-left: 35px;
+
+}
+footer .container-flex p {
+    padding-left: 35px;
+    
+}
+
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+
+}
+
+nav li {
+    list-style: none;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container .container-flex {
+
+    padding: 15px;
+
+}
+#Sobre-a-loja img {
+    width: 50%;
+    margin-right: 10px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+section {
+    padding: 15px 0;
+
+}
+section h2 {
+    margin-bottom: 16px;
+    color: rgb(156, 90, 4);
+    padding-left: 14%;
+    font-style: italic;
+}
+section hr {
+    padding: 1px;
+    background-color: rgb(156, 90, 4);
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1%;
+    row-gap: 5%;
+    align-items: center;
+    padding: 50px;
+}
+
+.lista-produtos li {
+    background-color: rgba(255, 255, 255, 0.514);
+    max-width: 100%;
+    margin-bottom: 24px;
+    align-items: center;
+    display: block;
+    border: 1px solid rgb(156, 90, 4);
+    padding: 10px;
+}
+.lista-produtos li img {
+    max-width: 100%;
+    margin-right: 50px;
+    padding: 8px;
+    border-radius: 5px;
+
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(207, 97, 7);
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    align-items: center;
+}
+
+button:hover {
+    background-color: rgb(245, 244, 244);
+}
+li img:hover {
+    transform: scale(1.1);
+}
+.price {
+    margin: 16px 0;
+    display: block;
+
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+footer li img {
+    height: 32px;
+}
+
+.container p {
+    padding: 20px 0;
+}
+@media screen and (max-width: 640px) {
+    
+    footer li {
+        margin-left: 1;
+    } 
+    .container {
+        display: block;
+    }
+    
+    #Sobre-a-loja h2 {
+        margin-left: 20%;
+        padding-top: 10%;
+    }
+
+    #Sobre-a-loja img {
+        width: 100%;
+        padding-top: 15px;
+        padding-left: 0;
+    }
+    header > .container-flex {
+        justify-content: space-between;
+        padding: 5% 0;
+        align-items: center;
+        margin-left: 30%;
+    }
+    #sobre {
+        left: 50%;
+        margin-right: 10%;
+    }
+    section h2 {
+        margin-left: 23%;
+
+    }
+    
+    .container .lista-produtos {
+        align-items: center;
+    }
+
+
+}
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container {
+        display: block;
+    }
+    header > .container-flex {
+        justify-content: space-between;
+        padding: 5% 0;
+        align-items: center;
+        margin-left: 30%;
+    }
+    #sobre {
+        left: 50%;
+        margin-right: 10%;
+    }
+    
+    #Sobre-a-loja h2 {
+        margin-left: 20%;
+        padding-top: 5%;
+        font-size: 35px;
+    }
+    #Sobre-a-loja img {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+    .lista-produtos {
+        grid-template-columns: repeat(2, 49%);
+    }
+    
+    .lista-produtos {
+        display: grid;
+    }
+    section h2 {
+        margin-left: 30%;
+
+    }
+
+}
